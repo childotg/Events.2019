@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeCamp2019.DBCreator", "Dryrun\CodeCamp2019.DBCreator\CodeCamp2019.DBCreator.csproj", "{AE87BEB6-8714-4FEA-9D1A-1F9F50D9ED65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeCamp2019.Models", "CodeCamp2019.Models\CodeCamp2019.Models.csproj", "{DC831A7F-8A88-4760-AD6F-66C4E13520EE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dryrun", "Dryrun", "{E22534CC-C97C-48E3-A182-C0CA16A4AC74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeCamp2019.Search", "CodeCamp2019.Search\CodeCamp2019.Search.csproj", "{01117CCC-4F42-4848-932E-0BD4B9F6E38A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE87BEB6-8714-4FEA-9D1A-1F9F50D9ED65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE87BEB6-8714-4FEA-9D1A-1F9F50D9ED65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE87BEB6-8714-4FEA-9D1A-1F9F50D9ED65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE87BEB6-8714-4FEA-9D1A-1F9F50D9ED65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC831A7F-8A88-4760-AD6F-66C4E13520EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC831A7F-8A88-4760-AD6F-66C4E13520EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC831A7F-8A88-4760-AD6F-66C4E13520EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC831A7F-8A88-4760-AD6F-66C4E13520EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01117CCC-4F42-4848-932E-0BD4B9F6E38A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01117CCC-4F42-4848-932E-0BD4B9F6E38A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01117CCC-4F42-4848-932E-0BD4B9F6E38A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01117CCC-4F42-4848-932E-0BD4B9F6E38A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AE87BEB6-8714-4FEA-9D1A-1F9F50D9ED65} = {E22534CC-C97C-48E3-A182-C0CA16A4AC74}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0AFE1B15-6D01-4E49-AF56-B60E3A631E24}
+	EndGlobalSection
+EndGlobal
