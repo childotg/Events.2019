@@ -9,9 +9,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeCamp2019.Models", "Code
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dryrun", "Dryrun", "{E22534CC-C97C-48E3-A182-C0CA16A4AC74}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeCamp2019.SearchEstablisher", "Dryrun\CodeCamp2019.SearchEstablisher\CodeCamp2019.SearchEstablisher.csproj", "{80FD4E35-96F9-4658-A28C-5C967BEE8ACE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeCamp2019.SearchEstablisher", "Dryrun\CodeCamp2019.SearchEstablisher\CodeCamp2019.SearchEstablisher.csproj", "{80FD4E35-96F9-4658-A28C-5C967BEE8ACE}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeCamp2019.API", "Dryrun\CodeCamp2019.API\CodeCamp2019.API.csproj", "{DA170617-AA82-4D61-B782-58C5FFAB23C3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Stuff", "Stuff", "{FC5ABA3E-FF34-423A-B161-0CFE4B09FA07}"
+	ProjectSection(SolutionItems) = preProject
+		Stuff\dbo.vApplications.sql = Stuff\dbo.vApplications.sql
+		Stuff\SearchItem.cs = Stuff\SearchItem.cs
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
