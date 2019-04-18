@@ -1,0 +1,4 @@
+Sales of Customer 29847
+https://aw-salesapi-2019.azurewebsites.net/api/sales/customer/29847
+First 10 Customers
+https://aw-api-customers.azurewebsites.net/api/customers/10

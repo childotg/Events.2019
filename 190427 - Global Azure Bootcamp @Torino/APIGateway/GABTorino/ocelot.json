@@ -1,0 +1,111 @@
+{
+  "ReRoutes": [
+    {
+      "UpstreamPathTemplate": "/v1/customers/{url}",
+      "UpstreamHttpMethod": [
+        "Get"
+      ],
+      "DownstreamPathTemplate": "/api/{url}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "aw-api-customers.azurewebsites.net",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/v1/sales/{url}",
+      "UpstreamHttpMethod": [
+        "Get"
+      ],
+      "DownstreamPathTemplate": "/api/{url}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "aw-salesapi-2019.azurewebsites.net",
+          "Port": 80
+        }
+      ],
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "10s",
+        "PeriodTimespan": 100,
+        "Limit": 10
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/v1/sales/all",
+      "UpstreamHttpMethod": [
+        "Get"
+      ],
+      "DownstreamPathTemplate": "/api/sales",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "aw-salesapi-2019.azurewebsites.net",
+          "Port": 80
+        }
+      ],
+      "Priority": 100
+    },
+
+    //Composition routes
+    {
+      "UpstreamPathTemplate": "/v1/8c91303c-f8df-4b45-9f83-ce578dc8e894/part1/{id}",
+      "UpstreamHttpMethod": [
+        "Get"
+      ],
+      "UpstreamHeaderTransform": {
+        "Accept-Encoding": "gzip;q=0"
+      },
+      "DownstreamPathTemplate": "/api/customer/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "aw-api-customers.azurewebsites.net",
+          "Port": 80
+        }
+      ],
+      "Key": "SalesOfPart1"
+    },
+    {
+      "UpstreamPathTemplate": "/v1/8c91303c-f8df-4b45-9f83-ce578dc8e894/part2/{id}",
+      "UpstreamHttpMethod": [
+        "Get"
+      ],
+      "UpstreamHeaderTransform": {
+        "Accept-Encoding": "gzip;q=0"
+      },
+      "DownstreamPathTemplate": "/api/sales/customer/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "aw-salesapi-2019.azurewebsites.net",
+          "Port": 80
+        }
+      ],
+      "Key": "SalesOfPart2"
+    }
+  ],
+  "Aggregates": [
+    {
+      "ReRouteKeys": [
+        "SalesOfPart1",
+        "SalesOfPart2"
+      ],
+      "UpstreamPathTemplate": "/v1/salesof/{id}",
+      "Aggregator": "SalesOfAggregator"
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://api.mybusiness.com",
+    "RateLimitOptions": {
+      "DisableRateLimitHeaders": false,
+      "QuotaExceededMessage": "Stop please!",
+      "HttpStatusCode": 429,
+      "ClientIdHeader": "Test"
+    }
+  }
+}

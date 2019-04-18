@@ -1,0 +1,315 @@
+{
+	"info": {
+		"_postman_id": "51b09385-a945-4bc5-a990-38c9075886a7",
+		"name": "Ocelot",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Demo 1",
+			"item": [
+				{
+					"name": "First 10 Customers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://aw-api-customers.azurewebsites.net/api/customers/10",
+							"protocol": "https",
+							"host": [
+								"aw-api-customers",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"customers",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All Sales",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://aw-salesapi-2019.azurewebsites.net/api/sales",
+							"protocol": "https",
+							"host": [
+								"aw-salesapi-2019",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"sales"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sales of a Customer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://aw-salesapi-2019.azurewebsites.net/api/sales/customer/29847",
+							"protocol": "https",
+							"host": [
+								"aw-salesapi-2019",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"sales",
+								"customer",
+								"29847"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CBC route on Localhost",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://localhost:44317/cbc",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44317",
+							"path": [
+								"cbc"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Demo 2",
+			"item": [
+				{
+					"name": "First 10 Customers over APIGW",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://localhost:44317/v1/customers/customers/10",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44317",
+							"path": [
+								"v1",
+								"customers",
+								"customers",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All Sales over APIGW",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://localhost:44317/v1/sales/sales",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44317",
+							"path": [
+								"v1",
+								"sales",
+								"sales"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All Sales over APIGW with custom path",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://localhost:44317/v1/sales/all",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44317",
+							"path": [
+								"v1",
+								"sales",
+								"all"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Demo 3",
+			"item": [
+				{
+					"name": "Sales of a specific Customer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://localhost:44317/v1/salesof/29847",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44317",
+							"path": [
+								"v1",
+								"salesof",
+								"29847"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Demo 4",
+			"item": [
+				{
+					"name": "All Sales",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://localhost:44317/v1/sales/sales",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44317",
+							"path": [
+								"v1",
+								"sales",
+								"sales"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Demo 5",
+			"item": [
+				{
+					"name": "Production Endpoint",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://gabt-prd.cloudmakers.xyz/v1/customers/customers/10",
+							"protocol": "http",
+							"host": [
+								"gabt-prd",
+								"cloudmakers",
+								"xyz"
+							],
+							"path": [
+								"v1",
+								"customers",
+								"customers",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Staging Endpoint",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://gabt-stg.cloudmakers.xyz/v1/customers/customers/10",
+							"protocol": "http",
+							"host": [
+								"gabt-stg",
+								"cloudmakers",
+								"xyz"
+							],
+							"path": [
+								"v1",
+								"customers",
+								"customers",
+								"10"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
