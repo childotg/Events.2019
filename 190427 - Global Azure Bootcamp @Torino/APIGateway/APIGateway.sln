@@ -13,18 +13,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DryRun", "DryRun", "{6815E3
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Stuff", "Stuff", "{C4B63515-8531-4AB3-9A52-DCF04CE5B2A5}"
 	ProjectSection(SolutionItems) = preProject
-		Aggregation.txt = Aggregation.txt
-		API-paths.txt = API-paths.txt
+		Stuff\Aggregation.txt = Stuff\Aggregation.txt
+		Stuff\API-paths.txt = Stuff\API-paths.txt
 		Stuff\ConnectionString.txt = Stuff\ConnectionString.txt
-		Extensions.txt = Extensions.txt
-		HostHeader.txt = HostHeader.txt
-		ocelot-sample.json = ocelot-sample.json
-		RedirectIssue.txt = RedirectIssue.txt
+		Stuff\Extensions.txt = Stuff\Extensions.txt
+		Stuff\HostHeader.txt = Stuff\HostHeader.txt
+		Stuff\ocelot-sample.json = Stuff\ocelot-sample.json
+		Stuff\RedirectIssue.txt = Stuff\RedirectIssue.txt
 		Stuff\Scaffold.txt = Stuff\Scaffold.txt
-		Throttling.txt = Throttling.txt
+		Stuff\Throttling.txt = Stuff\Throttling.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GABTorino", "GABTorino\GABTorino.csproj", "{6F477AEA-3E78-4051-86C6-C88D079F376A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GABTorino", "GABTorino\GABTorino.csproj", "{6F477AEA-3E78-4051-86C6-C88D079F376A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
