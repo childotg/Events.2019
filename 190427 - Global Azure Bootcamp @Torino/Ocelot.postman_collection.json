@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "51b09385-a945-4bc5-a990-38c9075886a7",
+		"_postman_id": "de38afed-0d54-4498-acd2-e48dcb25bea7",
 		"name": "Ocelot",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -235,7 +235,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://localhost:44317/v1/sales/sales",
+							"raw": "https://localhost:44317/v1/sales/all",
 							"protocol": "https",
 							"host": [
 								"localhost"
@@ -244,7 +244,7 @@
 							"path": [
 								"v1",
 								"sales",
-								"sales"
+								"all"
 							]
 						}
 					},
