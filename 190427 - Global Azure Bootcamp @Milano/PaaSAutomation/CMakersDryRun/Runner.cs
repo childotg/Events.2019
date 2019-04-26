@@ -72,6 +72,13 @@ namespace CMakersDryRun
                 .WithTimeToLive(S.DNSTtl)
                 .Attach().Apply();
 
+            webApp.Update()
+                .DefineHostnameBinding()
+                .WithThirdPartyDomain(S.CustomDomain)
+                .WithSubDomain(id)
+                .WithDnsRecordType(Microsoft.Azure.Management.AppService.Fluent.Models.CustomHostNameDnsRecordType.CName)
+                .Attach().Apply();
+
             var deploy = webApp.Deploy()
                 .WithPackageUri(S.WebAppImage)
                 .WithExistingDeploymentsDeleted(true)
