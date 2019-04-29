@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.28010.2041
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DryRun", "DryRun", "{ECF5261B-9C60-4CE5-BB85-060EA52C552F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CMakersDryRun", "CMakersDryRun\CMakersDryRun.csproj", "{5EFE440C-4A1C-49CA-A9BC-79FEF538B51A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CMakersDryRun", "CMakersDryRun\CMakersDryRun.csproj", "{5EFE440C-4A1C-49CA-A9BC-79FEF538B51A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Stuff", "Stuff", "{A93AE17D-146F-47B0-9073-4440A7EDCE74}"
 	ProjectSection(SolutionItems) = preProject
