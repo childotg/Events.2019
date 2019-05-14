@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomersAPI", "CustomersAPI\CustomersAPI.csproj", "{F76D07F3-6091-4988-B061-F4815143DDCB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SalesAPI2019", "SalesAPI2019\SalesAPI2019.csproj", "{8D9170DD-A164-48CB-BA7B-01C1611A63EC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "APIs", "APIs", "{F7B0F339-26EB-47C1-8175-88784A744071}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DryRun", "DryRun", "{6815E37E-28AA-4011-8C15-C21EFB245779}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Stuff", "Stuff", "{C4B63515-8531-4AB3-9A52-DCF04CE5B2A5}"
+	ProjectSection(SolutionItems) = preProject
+		Stuff\Aggregation.txt = Stuff\Aggregation.txt
+		Stuff\API-paths.txt = Stuff\API-paths.txt
+		Stuff\ConnectionString.txt = Stuff\ConnectionString.txt
+		Stuff\Extensions.txt = Stuff\Extensions.txt
+		Stuff\HostHeader.txt = Stuff\HostHeader.txt
+		Stuff\ocelot-sample.json = Stuff\ocelot-sample.json
+		Stuff\RedirectIssue.txt = Stuff\RedirectIssue.txt
+		Stuff\Scaffold.txt = Stuff\Scaffold.txt
+		Stuff\Throttling.txt = Stuff\Throttling.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNextDR", "DotNextDR\DotNextDR.csproj", "{58A4FBB0-686D-4603-AEF1-94D1521A718E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F76D07F3-6091-4988-B061-F4815143DDCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F76D07F3-6091-4988-B061-F4815143DDCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F76D07F3-6091-4988-B061-F4815143DDCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F76D07F3-6091-4988-B061-F4815143DDCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D9170DD-A164-48CB-BA7B-01C1611A63EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D9170DD-A164-48CB-BA7B-01C1611A63EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D9170DD-A164-48CB-BA7B-01C1611A63EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D9170DD-A164-48CB-BA7B-01C1611A63EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58A4FBB0-686D-4603-AEF1-94D1521A718E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58A4FBB0-686D-4603-AEF1-94D1521A718E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58A4FBB0-686D-4603-AEF1-94D1521A718E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58A4FBB0-686D-4603-AEF1-94D1521A718E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F76D07F3-6091-4988-B061-F4815143DDCB} = {F7B0F339-26EB-47C1-8175-88784A744071}
+		{8D9170DD-A164-48CB-BA7B-01C1611A63EC} = {F7B0F339-26EB-47C1-8175-88784A744071}
+		{58A4FBB0-686D-4603-AEF1-94D1521A718E} = {6815E37E-28AA-4011-8C15-C21EFB245779}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F9D724FB-3587-42DB-9716-5201082AAB3B}
+	EndGlobalSection
+EndGlobal

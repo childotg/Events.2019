@@ -1,0 +1,69 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "administratorLogin": {
+            "value": "api-demos"
+        },
+        "administratorLoginPassword": {
+            "value": null
+        },
+        "collation": {
+            "value": "SQL_Latin1_General_CP1_CI_AS"
+        },
+        "databaseName": {
+            "value": "data"
+        },
+        "tier": {
+            "value": "Standard"
+        },
+        "skuName": {
+            "value": "S0"
+        },
+        "location": {
+            "value": "westeurope"
+        },
+        "maxSizeBytes": {
+            "value": 268435456000
+        },
+        "serverName": {
+            "value": "api-demos"
+        },
+        "sampleName": {
+            "value": "AdventureWorksLT"
+        },
+        "zoneRedundant": {
+            "value": false
+        },
+        "licenseType": {
+            "value": ""
+        },
+        "readScaleOut": {
+            "value": "Disabled"
+        },
+        "numberOfReplicas": {
+            "value": 0
+        },
+        "minCapacity": {
+            "value": ""
+        },
+        "autoPauseDelay": {
+            "value": ""
+        },
+        "enableADS": {
+            "value": false
+        },
+        "allowAzureIps": {
+            "value": true
+        },
+        "databaseTags": {
+            "value": {}
+        },
+        "serverTags": {
+            "value": {}
+        },
+        "enableVA": {
+            "value": false
+        }
+    }
+}

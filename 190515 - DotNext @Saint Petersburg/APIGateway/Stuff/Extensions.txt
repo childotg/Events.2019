@@ -1,0 +1,14 @@
+ "Ocelot.Extensions": {
+    "Configuration": {
+      "Enabled": true,
+      "RepositoryType": "AzureStorage",
+      "CheckingInterval": 10,
+      "AzureStorage": {
+        "Type": "[Blob|File]",
+        "AccessType": "[SharedKey|SignedUri]",
+        "AccountName": "<accountName>",
+        "AccountKey": "<accountKey>",
+        "ResourceUri": "[<container|share/blob|file>|<full SAS URI>]"
+      }
+    }
+  }

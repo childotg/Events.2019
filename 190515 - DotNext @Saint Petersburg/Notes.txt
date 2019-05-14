@@ -1,0 +1,6 @@
+- Versioning and normalization with basic routing 
+- ViewModel composition with aggregators
+- Throttling
+- Extensions
+- Deployment and containerization
+- Multiple environment with Host-based routing

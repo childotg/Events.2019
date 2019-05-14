@@ -1,0 +1,129 @@
+﻿{
+  "ReRoutes": [
+    {
+      "UpstreamPathTemplate": "/v1/customers/{url}",
+      "UpstreamHttpMethod": [
+        "Get"
+      ],
+      "DownstreamPathTemplate": "/api/{url}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "aw-api-customers.azurewebsites.net",
+          "Port": 80
+        }
+      ],
+      "HttpHandlerOptions": {
+        "AllowAutoRedirect": true
+      }
+    },
+    //Sales pass-through
+    {
+      "UpstreamPathTemplate": "/v1/sales/{url}",
+      "UpstreamHttpMethod": [
+        "Get"
+      ],
+      "DownstreamPathTemplate": "/api/{url}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "aw-salesapi-2019.azurewebsites.net",
+          "Port": 80
+        }
+      ],
+      "HttpHandlerOptions": {
+        "AllowAutoRedirect": true
+      }
+    },
+    //Sales specific
+    {
+      "UpstreamPathTemplate": "/v1/sales/all",
+      "UpstreamHttpMethod": [
+        "Get"
+      ],
+      "DownstreamPathTemplate": "/api/sales",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "aw-salesapi-2019.azurewebsites.net",
+          "Port": 80
+        }
+      ],
+      "HttpHandlerOptions": {
+        "AllowAutoRedirect": true
+      },
+      "Priority": 100,
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "10s",
+        "PeriodTimespan": 30,
+        "Limit": 3
+      }
+    },
+
+
+    {
+      "Key": "SalesOfPart1",
+      "UpstreamPathTemplate": "/v1/customer/8c91303c-f8df-4b45-9f83-ce578dc8e894/{id}",
+      "UpstreamHttpMethod": [
+        "Get"
+      ],
+      "DownstreamPathTemplate": "/api/customer/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "aw-api-customers.azurewebsites.net",
+          "Port": 80
+        }
+      ],
+      "HttpHandlerOptions": {
+        "AllowAutoRedirect": true
+      },
+      "UpstreamHeaderTransform": {
+        "Accept-Encoding": "gzip;q=0"
+      }
+    },
+    //Sales pass-through
+    {
+      "Key": "SalesOfPart2",
+      "UpstreamPathTemplate": "/v1/sales/8c91303c-f8df-4b45-9f83-ce578dc8e894/{id}",
+      "UpstreamHttpMethod": [
+        "Get"
+      ],
+      "DownstreamPathTemplate": "/api/sales/customer/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "aw-salesapi-2019.azurewebsites.net",
+          "Port": 80
+        }
+      ],
+      "HttpHandlerOptions": {
+        "AllowAutoRedirect": true
+      },
+      "UpstreamHeaderTransform": {
+        "Accept-Encoding": "gzip;q=0"
+      }
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://api.mybusiness.com",
+    "RateLimitOptions": {
+      "DisableRateLimitHeaders": false,
+      "QuotaExceededMessage": "Stop please!",
+      "HttpStatusCode": 419,
+      "ClientIdHeader": "Test"
+    }
+  },
+  "Aggregates": [
+    {
+      "ReRouteKeys": [
+        "SalesOfPart1",
+        "SalesOfPart2"
+      ],
+      "UpstreamPathTemplate": "/v1/salesof/{id}",
+      "Aggregator": "SalesOfAggregator"
+    }
+  ]
+}

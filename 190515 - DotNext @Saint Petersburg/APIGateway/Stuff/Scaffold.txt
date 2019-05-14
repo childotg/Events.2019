@@ -1,0 +1,1 @@
+Scaffold-DbContext 'data source=api-demos.database.windows.net;initial catalog=data;persist security info=True;user id=api-demos;password=[password];MultipleActiveResultSets=True;' Microsoft.EntityFrameworkCore.SqlServer
