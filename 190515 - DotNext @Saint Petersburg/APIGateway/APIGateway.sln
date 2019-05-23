@@ -24,7 +24,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Stuff", "Stuff", "{C4B63515
 		Stuff\Throttling.txt = Stuff\Throttling.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNextDR", "DotNextDR\DotNextDR.csproj", "{58A4FBB0-686D-4603-AEF1-94D1521A718E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNextDR", "DotNextDR\DotNextDR.csproj", "{58A4FBB0-686D-4603-AEF1-94D1521A718E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
