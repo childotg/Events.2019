@@ -1,0 +1,18 @@
+//General-settings
+"RateLimitOptions": {
+  "DisableRateLimitHeaders": false,
+  "QuotaExceededMessage": "Customize Tips!",
+  "HttpStatusCode": 999,
+  "ClientIdHeader" : "Test"
+}
+
+
+
+//Route-specific settings
+"RateLimitOptions": {
+    "ClientWhitelist": [],
+    "EnableRateLimiting": true,
+    "Period": "1s",
+    "PeriodTimespan": 1,
+    "Limit": 1
+}

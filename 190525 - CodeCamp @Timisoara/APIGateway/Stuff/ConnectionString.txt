@@ -1,0 +1,5 @@
+dataEntities
+metadata=res://*/Customers.csdl|res://*/Customers.ssdl|res://*/Customers.msl;provider=System.Data.SqlClient;provider connection string="data source=api-demos.database.windows.net;initial catalog=data-stg;persist security info=True;user id=api-demos;password=[password];MultipleActiveResultSets=True;App=EntityFramework"
+
+
+data source=api-demos.database.windows.net;initial catalog=data;persist security info=True;user id=api-demos;password=[password];MultipleActiveResultSets=True;

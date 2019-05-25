@@ -1,0 +1,20 @@
+Request GUID
+8c91303c-f8df-4b45-9f83-ce578dc8e894
+
+
+"Aggregates": [
+	{
+        "ReRouteKeys": [
+            "SalesOfPart1",
+            "SalesOfPart2"
+        ],
+        "UpstreamPathTemplate": "/v1/salesof/{id}",
+        //"Aggregator": ""
+    }
+]
+
+
+
+"UpstreamHeaderTransform": {
+    "": ""
+}
