@@ -24,7 +24,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Stuff", "Stuff", "{C4B63515
 		Stuff\Throttling.txt = Stuff\Throttling.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeCampDR", "CodeCampDR\CodeCampDR.csproj", "{7690343C-A38C-42BF-8140-FDF981320448}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeCampDR", "CodeCampDR\CodeCampDR.csproj", "{7690343C-A38C-42BF-8140-FDF981320448}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
