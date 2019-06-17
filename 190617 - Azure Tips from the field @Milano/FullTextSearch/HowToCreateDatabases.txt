@@ -1,0 +1,14 @@
+---To create schemas---
+1. Create the SQL Server (logical server) in Azure
+2. Create two (2) databases "tenant-1" and "tenant-2"
+3. Annotate the connection string in the form:
+	Server=tcp:searchdemos.database.windows.net,1433;Initial Catalog=tenant-{1};Persist Security Info=False;User ID={your_username};Password={your_password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
+4. Open AppsContext.cs and fill the connection string for the first database in the quotes:
+	public AppsContext():this("")
+5. Build the project
+6. Run Update-Database on Package Manager Console
+7. Replace the connection string with the second database, build and run again the command
+---To feed data---
+1. Open the console on the DBCreator project bin folder
+2. run dotnet "[connectionString]" Free - for the first DB
+3. run dotnet "[connectionString]" Paid - for the second DB
