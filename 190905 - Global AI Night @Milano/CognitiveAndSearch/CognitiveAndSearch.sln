@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29215.179
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{16860D91-BF5E-4376-97A6-E0DE28A95065}"
+	ProjectSection(SolutionItems) = preProject
+		..\Dataset.json = ..\Dataset.json
+		..\Schema+Data.sql = ..\Schema+Data.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DryRun", "DryRun", "{A7286DF8-051C-4380-9859-3C9560EF6797}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SentimentAnalysis", "SentimentAnalysis\SentimentAnalysis.csproj", "{35E7B5D7-602E-4EE9-9A85-E5C3CC11E837}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35E7B5D7-602E-4EE9-9A85-E5C3CC11E837}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35E7B5D7-602E-4EE9-9A85-E5C3CC11E837}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35E7B5D7-602E-4EE9-9A85-E5C3CC11E837}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35E7B5D7-602E-4EE9-9A85-E5C3CC11E837}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{35E7B5D7-602E-4EE9-9A85-E5C3CC11E837} = {A7286DF8-051C-4380-9859-3C9560EF6797}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {54B0345F-EAD1-4458-8F93-5911FF33E5DD}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,11 @@
+Event link: https://global.ainights.com/bootcamp/da652352-396a-47ce-bb5b-93aa2ebc81cf
+
+- Amazon reviews
+- Online demo: https://azure.microsoft.com/it-it/services/cognitive-services/text-analytics/
+- Context of Cognitive Services
+- API Explorer: https://westeurope.dev.cognitive.microsoft.com/docs/services/TextAnalytics-v2-1
+- DataSet presentation and C# SDK
+- Azure Search Integration
+- Query1: $filter=Sentiment/all(sent: sent lt 0.3) and Rating lt 4
+- Query2: &search=&moreLikeThis=R1ELHGEEAKGZ97&searchFields=Keyphrases
+- Futures
