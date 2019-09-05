@@ -13,7 +13,7 @@ namespace SentimentAnalysis
         static void Main(string[] args)
         {
             var endpoint = $"https://westeurope.api.cognitive.microsoft.com";
-            var cl = new TextAnalyticsClient(new ApiKeyServiceClientCredentials(""))
+            var cl = new TextAnalyticsClient(new ApiKeyServiceClientCredentials("97f9655f329d4d7f981017e2864c4bcf"))
             {
                 Endpoint=endpoint
             };
