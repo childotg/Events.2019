@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29409.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DryRun", "DryRun", "{ECF5261B-9C60-4CE5-BB85-060EA52C552F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CMakersDryRun", "CMakersDryRun\CMakersDryRun.csproj", "{5EFE440C-4A1C-49CA-A9BC-79FEF538B51A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Stuff", "Stuff", "{A93AE17D-146F-47B0-9073-4440A7EDCE74}"
+	ProjectSection(SolutionItems) = preProject
+		Stuff\dbImage.bacpac = Stuff\dbImage.bacpac
+		Stuff\SampleMessage.txt = Stuff\SampleMessage.txt
+		Stuff\webApp.zip = Stuff\webApp.zip
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0D33EF71-375F-48BE-B8A0-A7AEB0466DC6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5EFE440C-4A1C-49CA-A9BC-79FEF538B51A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EFE440C-4A1C-49CA-A9BC-79FEF538B51A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EFE440C-4A1C-49CA-A9BC-79FEF538B51A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EFE440C-4A1C-49CA-A9BC-79FEF538B51A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5EFE440C-4A1C-49CA-A9BC-79FEF538B51A} = {ECF5261B-9C60-4CE5-BB85-060EA52C552F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {31EB9388-B20D-4796-800C-13CD70F062DD}
+	EndGlobalSection
+EndGlobal
