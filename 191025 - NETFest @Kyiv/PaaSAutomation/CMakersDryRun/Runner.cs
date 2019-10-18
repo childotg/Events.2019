@@ -1,4 +1,7 @@
-﻿using Microsoft.Azure.EventGrid;
+﻿using Certes;
+using Certes.Acme;
+using Certes.Acme.Resource;
+using Microsoft.Azure.EventGrid;
 using Microsoft.Azure.EventGrid.Models;
 using Microsoft.Azure.Management.Fluent;
 using Microsoft.Azure.Management.ResourceManager.Fluent;
@@ -6,6 +9,7 @@ using Microsoft.Azure.Management.Sql.Fluent;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -52,6 +56,7 @@ namespace CMakersDryRun
                 .WithExistingWindowsPlan(plan)
                 .WithExistingResourceGroup(S.AppServicePlanRG)
                 .WithClientAffinityEnabled(false)
+                .WithHttpsOnly(true)
                 .WithDefaultDocuments(Enumerable.Empty<string>().ToList())
                 .WithoutPhp()
                 .WithPlatformArchitecture(Microsoft.Azure.Management.AppService.Fluent.PlatformArchitecture.X64)
@@ -80,6 +85,19 @@ namespace CMakersDryRun
                 .WithDnsRecordType(Microsoft.Azure.Management.AppService.Fluent.Models.CustomHostNameDnsRecordType.CName)
                 .Attach().Apply();
 
+
+            var certificate = AcmeUtils.GenerateCertificate(id, S.CustomDomain, dns).GetAwaiter().GetResult();
+            var domain = $"{id}.{S.CustomDomain}";
+            if (certificate.HasValue)
+            {
+                webApp.Update()
+                .DefineSslBinding()
+                .ForHostname(domain)
+                .WithPfxCertificateToUpload(certificate.Value.Item1,certificate.Value.Item2)
+                .WithSniBasedSsl()
+                .Attach().Apply();
+            }
+            
             var deploy = webApp.Deploy()
                 .WithPackageUri(S.WebAppImage)
                 .WithExistingDeploymentsDeleted(true)

@@ -31,6 +31,7 @@ namespace CMakersDryRun
         public static string AzureClientSecret = "";
         public static string AzureTenantId = "";
         public static string AzureSubscription = "";
+        public static string PfxPassword = "cmakers";
 
 
     }
