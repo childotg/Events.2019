@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
 namespace InfoApp.Pages
@@ -12,11 +13,12 @@ namespace InfoApp.Pages
     {
         private readonly ILogger<IndexModel> _logger;
 
-
+        public string Message { get; set; }
         public Dictionary<string,string> Variables { get; set; }
-        public IndexModel(ILogger<IndexModel> logger)
+        public IndexModel(ILogger<IndexModel> logger,IConfiguration config)
         {
             _logger = logger;
+            Message = config["MySetting"];
         }
 
         public void OnGet()
