@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 
 namespace InfoApp
 {
@@ -23,8 +24,9 @@ namespace InfoApp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSingleton<IConfiguration>(Configuration);
-            services.AddRazorPages();
-
+            services.AddRazorPages();            
+            services.AddLogging(b=>b.AddConsole());            
+            services.AddHostedService<BackgroundWork>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -38,6 +40,7 @@ namespace InfoApp
             {
                 app.UseExceptionHandler("/Error");
             }
+            
 
             app.UseStaticFiles();
 

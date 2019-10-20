@@ -8,7 +8,11 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Stuff", "Stuff", "{A287E593-1D57-45B1-99C5-0DE4745388A9}"
 	ProjectSection(SolutionItems) = preProject
 		Stuff\asdd-topology-01.PublishSettings = Stuff\asdd-topology-01.PublishSettings
+		Stuff\Commands.txt = Stuff\Commands.txt
+		Stuff\index.html = Stuff\index.html
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FB662F89-0E94-4DF2-9076-7A6B14865E5D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
