@@ -25,7 +25,6 @@ namespace InfoApp
         {
             services.AddSingleton<IConfiguration>(Configuration);
             services.AddRazorPages();            
-            services.AddLogging(b=>b.AddConsole());            
             services.AddHostedService<BackgroundWork>();
         }
 
