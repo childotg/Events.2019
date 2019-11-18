@@ -1,0 +1,10 @@
+- Index wizard with Azure Search Import Data
+- Demo on Search Explorers
+- Pitfalls: type, clustered size, genres, unique ID
+- View creation on DB
+- Index wizard on new View with enriched fields
+- Search page Generator
+- Test queries: by Category and Size and 'free' text
+- Scoring profiles for relevance sorting
+- Add the second tenant with the SDK and C#
+- ASP.NET Core APIs with basic query
