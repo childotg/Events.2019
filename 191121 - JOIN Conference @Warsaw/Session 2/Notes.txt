@@ -1,0 +1,8 @@
+Checklist:
+- Reset firewall rules
+- Replica on hyperscale
+- Move out DB of pool
+- Remove DB_ADMINS
+- Enable Read Replica
+- Remove failovr group
+

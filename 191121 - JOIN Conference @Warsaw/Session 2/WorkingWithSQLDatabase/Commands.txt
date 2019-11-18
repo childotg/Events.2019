@@ -1,0 +1,15 @@
+--Instance-level rule
+SELECT * FROM sys.firewall_rules
+--Database-level rule
+SELECT * FROM sys.database_firewall_rules
+
+--Create user
+CREATE USER wwsdReader WITH PASSWORD=''
+--Permissions
+EXEC sp_addrolemember 'db_datareader', 'wwsdReader';
+
+--Connection string
+Server=tcp:{1}.database.windows.net,1433;Initial Catalog=dtu-based;Persist Security Info=False;User ID=wwsdAdmin;Password={0};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
+
+--Serverless status
+Get-AzSqlDatabase -ResourceGroupName SQLDatabase -ServerName workingwithsqldatabase  -DatabaseName vcore-based-serverless | Select -ExpandProperty "Status"
