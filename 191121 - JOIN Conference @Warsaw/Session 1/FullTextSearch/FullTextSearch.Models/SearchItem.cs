@@ -14,7 +14,7 @@ namespace FullTextSearch.Models.Search
         public double? AppSizeInKb { get; set; }
         public string AppSize { get; set; }
         public string AppInstalls { get; set; }
-        public AppType AppType { get; set; }
+        public string AppType { get; set; }
         public double? AppPrice { get; set; }
         public string AppContentRating { get; set; }
         public string[] AppGenres { get; set; }
