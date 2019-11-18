@@ -9,9 +9,16 @@ namespace FullTextSearch.DBCreator
 
         static async Task Main(string[] args)
         {
-            await new DBCreatorTask(
-                new LoggerFactory().AddConsole(),
-                args[0],args[1]).RunAsync();
+            var factory = LoggerFactory.Create(builder =>
+            {
+                builder
+                    .AddFilter("Microsoft", LogLevel.Warning)
+                    .AddFilter("System", LogLevel.Warning)
+                    .AddFilter("FullTextSearch.DBCreator", LogLevel.Debug)
+                    .AddConsole();
+            });
+
+            await new DBCreatorTask(factory,args[0],args[1]).RunAsync();
         }
     }
 }
