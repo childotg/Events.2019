@@ -1,0 +1,17 @@
+Write-Output "STARTED --- OPS-DBMaintenance"
+
+$sqlConnection = new-object System.Data.SqlClient.SqlConnection
+$sqlConnection.ConnectionString = Get-AutomationVariable -Name 'MainDatabase'
+$sqlConnection.Open()
+
+$sqlCommand = new-object System.Data.SqlClient.SqlCommand
+$sqlCommand.CommandTimeout = 600
+$sqlCommand.Connection = $sqlConnection
+
+Write-Output "Issuing command to run stored procedure"
+$sqlCommand.CommandText= "exec ops.pAzureSQLMaintenance @Operation='all' ,@LogToTable=1"
+$result = $sqlCommand.ExecuteNonQuery()
+Write-Output "Stored procedure execution completed"
+$sqlConnection.Close()
+
+Write-Output "COMPLETED --- OPS-DBMaintenance"

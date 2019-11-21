@@ -2,6 +2,11 @@
 SELECT * FROM sys.firewall_rules
 --Database-level rule
 SELECT * FROM sys.database_firewall_rules
+--Add rule
+EXECUTE sp_set_database_firewall_rule @name = N'Single',
+   @start_ip_address = '', @end_ip_address = ''
+   --Delete rule
+EXECUTE sp_delete_database_firewall_rule @name = N'Single'
 
 --Create user
 CREATE USER wwsdReader WITH PASSWORD=''

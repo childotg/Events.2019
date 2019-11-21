@@ -25,7 +25,7 @@ namespace HeartBeat
 
         private static void SqlHeartBeat()
         {
-            var serverName = "workingwithsqldatabase";
+            var serverName = "wwsd";
             var query = "SELECT *,@@SERVERNAME FROM sys.database_service_objectives";
             var password = "[removed]";
             var connsStr = string.Format(

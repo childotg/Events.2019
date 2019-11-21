@@ -1,7 +1,7 @@
 - Index wizard with Azure Search Import Data
-- Search page Generator
 - Demo on Search Explorers
-$filter=AppCategory eq 'GAME' and AppSizeInKb gt 30000&search=free
+$filter=AppCategory eq 'GAME' and AppSizeInKb gt 30000&search=free&$orderby=AppRating desc
+- Search page Generator
 - Pitfalls: type, clustered size, genres, unique ID
 - View creation on DB
 - Index wizard on new View with enriched fields
