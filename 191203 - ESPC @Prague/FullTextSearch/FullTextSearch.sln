@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29326.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Stuff", "Stuff", "{D23801B1-DE0B-4E99-8C88-5AFA24AFFEF7}"
+	ProjectSection(SolutionItems) = preProject
+		Stuff\AppType.cs = Stuff\AppType.cs
+		Stuff\dbo.vApplications.sql = Stuff\dbo.vApplications.sql
+		HowToCreateDatabases.txt = HowToCreateDatabases.txt
+		Stuff\SearchItem.cs = Stuff\SearchItem.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DryRun", "DryRun", "{449905B0-1F63-4335-9E79-F40F2FDD56EE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FullTextSearch.DBCreator", "FullTextSearch.DBCreator\FullTextSearch.DBCreator.csproj", "{7A11E8FA-8605-4E75-9977-71933ABEC788}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FullTextSearch.Models", "FullTextSearch.Models\FullTextSearch.Models.csproj", "{5B6DB6DC-1ACB-41EB-9F8C-90434CA5986A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FullTextSearch.Establisher", "FullTextSearch.Establisher\FullTextSearch.Establisher.csproj", "{C9A0F578-7218-4D92-9859-9989C19B4ABB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FullTextSearch.API", "FullTextSearch.API\FullTextSearch.API.csproj", "{EADF5298-8BE3-4EDA-8F94-467A00B6EB28}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A11E8FA-8605-4E75-9977-71933ABEC788}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A11E8FA-8605-4E75-9977-71933ABEC788}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A11E8FA-8605-4E75-9977-71933ABEC788}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A11E8FA-8605-4E75-9977-71933ABEC788}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B6DB6DC-1ACB-41EB-9F8C-90434CA5986A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B6DB6DC-1ACB-41EB-9F8C-90434CA5986A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B6DB6DC-1ACB-41EB-9F8C-90434CA5986A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B6DB6DC-1ACB-41EB-9F8C-90434CA5986A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9A0F578-7218-4D92-9859-9989C19B4ABB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9A0F578-7218-4D92-9859-9989C19B4ABB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9A0F578-7218-4D92-9859-9989C19B4ABB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9A0F578-7218-4D92-9859-9989C19B4ABB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EADF5298-8BE3-4EDA-8F94-467A00B6EB28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EADF5298-8BE3-4EDA-8F94-467A00B6EB28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EADF5298-8BE3-4EDA-8F94-467A00B6EB28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EADF5298-8BE3-4EDA-8F94-467A00B6EB28}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7A11E8FA-8605-4E75-9977-71933ABEC788} = {449905B0-1F63-4335-9E79-F40F2FDD56EE}
+		{C9A0F578-7218-4D92-9859-9989C19B4ABB} = {449905B0-1F63-4335-9E79-F40F2FDD56EE}
+		{EADF5298-8BE3-4EDA-8F94-467A00B6EB28} = {449905B0-1F63-4335-9E79-F40F2FDD56EE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F14AC25A-EE7D-4599-B9F3-99C14E41C0E3}
+	EndGlobalSection
+EndGlobal
