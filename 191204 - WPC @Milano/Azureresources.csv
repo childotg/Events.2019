@@ -1,0 +1,13 @@
+NAME,TYPE,LOCATION,
+"dtu-based (workingwithsqldatabase-ne/dtu-based)","SQL database","North Europe"
+"dtu-based (workingwithsqldatabase/dtu-based)","SQL database","West Europe"
+"Maintenance (workingwithsqldatabase/Maintenance)","Runbook","West Europe"
+"OPS-DB-Maintenance (workingwithsqldatabase/OPS-DB-Maintenance)","Runbook","West Europe"
+"vcore-based-hyperscale (workingwithsqldatabase/vcore-based-hyperscale)","SQL database","West Europe"
+"vcore-based-provisioned (workingwithsqldatabase/vcore-based-provisioned)","SQL database","West Europe"
+"vcore-based-provisioned-staging (workingwithsqldatabase/vcore-based-provisioned-staging)","SQL database","West Europe"
+"vcore-based-serverless (workingwithsqldatabase/vcore-based-serverless)","SQL database","West Europe"
+"vcore-elasticpool (workingwithsqldatabase/vcore-elasticpool)","SQL elastic pool","West Europe"
+"workingwithsqldatabase","Automation Account","West Europe"
+"workingwithsqldatabase","SQL server","West Europe"
+"workingwithsqldatabase-ne","SQL server","North Europe"
